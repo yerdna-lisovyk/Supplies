@@ -1,0 +1,30 @@
+object DataModule2: TDataModule2
+  Height = 629
+  Width = 757
+  PixelsPerInch = 120
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=MSDASQL.1;Password=root;Persist Security Info=True;User' +
+      ' ID=root;Extended Properties="DSN=Suply;SERVER=localhost;UID=roo' +
+      't;PWD=root;DATABASE=suppliers;PORT=3306";Initial Catalog=supplie' +
+      'rs'
+    Left = 48
+    Top = 32
+  end
+  object DataSource1: TDataSource
+    Left = 240
+    Top = 216
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    DataSource = DataSource1
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * From supply')
+    Left = 520
+    Top = 168
+  end
+end

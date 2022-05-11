@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit_mainH
+#define Unit_mainH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TF_main : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TF_main(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TF_main *F_main;
+//---------------------------------------------------------------------------
+#endif
