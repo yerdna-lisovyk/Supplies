@@ -1,7 +1,7 @@
-object F_main: TF_main
+object F_add: TF_add
   Left = 0
   Top = 0
-  Caption = 'Main'
+  Caption = 'F_add'
   ClientHeight = 433
   ClientWidth = 622
   Color = clBtnFace
