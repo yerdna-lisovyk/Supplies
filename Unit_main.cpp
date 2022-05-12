@@ -5,6 +5,8 @@
 
 #include "Unit_main.h"
 #include "D_modul.h"
+#include "Unit_add.h"
+#include "SupliPCH1.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -20,7 +22,9 @@ __fastcall TF_main::TF_main(TComponent* Owner)
 
 void __fastcall TF_main::Button1Click(TObject *Sender)
 {
-    DataModule2->ADOSQl->SQL->Text = "";
+    F_add->Show();
+
 }
 //---------------------------------------------------------------------------
+
 

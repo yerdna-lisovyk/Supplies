@@ -13,9 +13,9 @@ object F_main: TF_main
   TextHeight = 15
   object DBGrid1: TDBGrid
     Left = 8
-    Top = 344
+    Top = 264
     Width = 393
-    Height = 185
+    Height = 265
     DataSource = DataModule2.DataSource1
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
@@ -44,11 +44,6 @@ object F_main: TF_main
       item
         Expanded = False
         FieldName = 'model'
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWindowText
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = []
         Width = 100
         Visible = True
       end
@@ -66,7 +61,7 @@ object F_main: TF_main
   object DBGrid2: TDBGrid
     Left = 8
     Top = 8
-    Width = 993
+    Width = 1032
     Height = 177
     DataSource = DataModule2.DataSource2
     TabOrder = 1
@@ -79,59 +74,68 @@ object F_main: TF_main
       item
         Expanded = False
         FieldName = 'id_supplies'
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'company_name'
+        Title.Caption = #1053#1072#1079#1074#1072#1085#1080#1077' '#1082#1086#1084#1087#1072#1085#1080#1080
+        Width = 150
         Visible = True
       end
       item
         Expanded = False
-        FieldName = #1057#1027'ompany_name'
-        Width = 100
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = #1057#1027'ompany_direktor'
-        Width = 100
+        FieldName = 'company_direktor'
+        Title.Caption = #1054#1073#1088#1072#1097#1072#1090#1089#1103#1050
+        Width = 150
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'position'
+        Title.Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
         Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'adress'
-        Width = 100
+        Title.Caption = #1040#1076#1088#1077#1089#1089
+        Width = 150
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'sity'
+        Title.Caption = #1043#1086#1088#1086#1076
         Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'region'
+        Title.Caption = #1056#1077#1075#1080#1086#1085
         Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'ind'
-        Width = 100
+        Title.Caption = #1048#1085#1076#1077#1082#1089
+        Width = 60
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'Side'
+        Title.Caption = #1057#1090#1088#1072#1085#1072
         Width = 100
         Visible = True
       end
       item
         Expanded = False
         FieldName = 'telephone'
+        Title.Caption = #1058#1077#1083#1077#1092#1086#1085
         Width = 100
         Visible = True
       end>
@@ -139,8 +143,32 @@ object F_main: TF_main
   object Panel1: TPanel
     Left = 8
     Top = 191
-    Width = 993
+    Width = 1032
     Height = 50
     TabOrder = 2
+    object Button1: TButton
+      Left = 16
+      Top = 8
+      Width = 145
+      Height = 33
+      Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1087#1086#1089#1090#1072#1074#1097#1080#1082#1072
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+  end
+  object Panel2: TPanel
+    Left = 407
+    Top = 264
+    Width = 225
+    Height = 265
+    TabOrder = 3
+    object Button2: TButton
+      Left = 8
+      Top = 16
+      Width = 209
+      Height = 57
+      Caption = 'Button2'
+      TabOrder = 0
+    end
   end
 end

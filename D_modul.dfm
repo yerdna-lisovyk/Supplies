@@ -29,14 +29,13 @@ object DataModule2: TDataModule2
     Top = 136
   end
   object ADOSQl: TADOQuery
-    Active = True
     Connection = DB_Connection
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
       'SELECT * From supply')
-    Left = 248
-    Top = 304
+    Left = 80
+    Top = 264
   end
   object ADOQuery2: TADOQuery
     Active = True
