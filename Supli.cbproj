@@ -140,6 +140,12 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="Unit_add.cpp">
+            <Form>F_add</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit_add.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Unit_main.cpp">
             <Form>F_main</Form>
             <FormType>dfm</FormType>
@@ -148,6 +154,7 @@
         </CppCompile>
         <FormResources Include="Unit_main.dfm"/>
         <FormResources Include="D_modul.dfm"/>
+        <FormResources Include="Unit_add.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
