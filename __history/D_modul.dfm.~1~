@@ -1,9 +1,0 @@
-object DataModule2: TDataModule2
-  Height = 629
-  Width = 757
-  PixelsPerInch = 120
-  object ADOConnection1: TADOConnection
-    Left = 48
-    Top = 32
-  end
-end

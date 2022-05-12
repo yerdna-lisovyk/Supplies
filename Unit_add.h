@@ -33,6 +33,8 @@ __published:	// IDE-managed Components
 	TEdit *Edit8;
 	TEdit *Edit9;
 	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall ClearEdit(TObject *Sender);
+	void __fastcall FormHide(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TF_add(TComponent* Owner);

@@ -1,27 +1,30 @@
 object F_add: TF_add
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
   Caption = #1044#1086#1073#1072#1074#1080#1090#1100
   ClientHeight = 433
-  ClientWidth = 622
+  ClientWidth = 506
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnHide = FormHide
   TextHeight = 15
   object Panel1: TPanel
     Left = 8
     Top = 8
-    Width = 606
+    Width = 497
     Height = 425
     TabOrder = 0
     object Label1: TLabel
       Left = 8
       Top = 8
-      Width = 161
-      Height = 25
+      Width = 146
+      Height = 23
       Caption = #1053#1072#1079#1074#1072#1085#1080#1077' '#1092#1080#1088#1084#1099
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -137,7 +140,7 @@ object F_add: TF_add
     object Button1: TButton
       Left = 8
       Top = 392
-      Width = 585
+      Width = 457
       Height = 25
       Caption = #1044#1086#1073#1072#1074#1080#1090#1100
       TabOrder = 0

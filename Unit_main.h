@@ -19,11 +19,16 @@ __published:	// IDE-managed Components
 	TDBGrid *DBGrid2;
 	TPanel *Panel1;
 	TPanel *Panel2;
-	TButton *Button1;
+	TButton *B_add;
 	TButton *Button2;
-	void __fastcall Button1Click(TObject *Sender);
+	TButton *B_edit;
+	TButton *B_delete;
+	void __fastcall B_addClick(TObject *Sender);
+	void __fastcall B_editClick(TObject *Sender);
+	void __fastcall B_deleteClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
+    int id;
 	__fastcall TF_main(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
