@@ -8,6 +8,7 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include "cspin.h"
 //---------------------------------------------------------------------------
 class TF_add_supli : public TForm
 {
@@ -19,12 +20,13 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TButton *Button1;
 	TEdit *Edit1;
-	TEdit *Edit2;
-	TEdit *Edit3;
 	TLabel *Label3;
 	TLabel *Label4;
 	TLabel *Label5;
+	TCSpinEdit *CSpinEdit1;
+	TCSpinEdit *CSpinEdit2;
 	void __fastcall FormShow(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TF_add_supli(TComponent* Owner);

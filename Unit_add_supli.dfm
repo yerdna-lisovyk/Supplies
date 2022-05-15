@@ -104,6 +104,7 @@ object F_add_supli: TF_add_supli
       Height = 25
       Caption = #1044#1086#1073#1072#1074#1080#1090#1100
       TabOrder = 2
+      OnClick = Button1Click
     end
     object Edit1: TEdit
       Left = 152
@@ -112,18 +113,20 @@ object F_add_supli: TF_add_supli
       Height = 23
       TabOrder = 3
     end
-    object Edit2: TEdit
+    object CSpinEdit1: TCSpinEdit
       Left = 152
-      Top = 136
+      Top = 142
       Width = 145
-      Height = 23
+      Height = 24
+      Ctl3D = True
+      ParentCtl3D = False
       TabOrder = 4
     end
-    object Edit3: TEdit
+    object CSpinEdit2: TCSpinEdit
       Left = 152
-      Top = 176
+      Top = 182
       Width = 145
-      Height = 23
+      Height = 24
       TabOrder = 5
     end
   end

@@ -24,7 +24,11 @@ object DataModule2: TDataModule2
     CursorType = ctStatic
     Parameters = <>
     SQL.Strings = (
-      'SELECT * From supply')
+      
+        'SELECT '#9'a.id_supply,c.type,b.company_name,a.model,a.n_documents,' +
+        'a.price'
+      'From supply a,type_sypply c,suppliers b'
+      'WHERE a.id_type = c.id_type AND a.id_supplies = b.id_supplies')
     Left = 200
     Top = 136
   end

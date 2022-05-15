@@ -23,6 +23,8 @@ __published:	// IDE-managed Components
 	TButton *Button2;
 	TButton *B_edit;
 	TButton *B_delete;
+	TButton *Button1;
+	TButton *Button3;
 	void __fastcall B_addClick(TObject *Sender);
 	void __fastcall B_editClick(TObject *Sender);
 	void __fastcall B_deleteClick(TObject *Sender);
