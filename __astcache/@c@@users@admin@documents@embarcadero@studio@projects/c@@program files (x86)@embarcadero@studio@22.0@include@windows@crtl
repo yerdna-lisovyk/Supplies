@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit_add_supliH
+#define Unit_add_supliH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TF_add_supli : public TForm
+{
+__published:	// IDE-managed Components
+private:	// User declarations
+public:		// User declarations
+	__fastcall TF_add_supli(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TF_add_supli *F_add_supli;
+//---------------------------------------------------------------------------
+#endif

@@ -146,15 +146,22 @@
             <DependentOn>Unit_add.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Unit_add_supli.cpp">
+            <Form>F_add_supli</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Unit_add_supli.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Unit_main.cpp">
             <Form>F_main</Form>
             <FormType>dfm</FormType>
             <DependentOn>Unit_main.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <FormResources Include="Unit_add.dfm"/>
+        <FormResources Include="Unit_add_supli.dfm"/>
         <FormResources Include="Unit_main.dfm"/>
         <FormResources Include="D_modul.dfm"/>
-        <FormResources Include="Unit_add.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

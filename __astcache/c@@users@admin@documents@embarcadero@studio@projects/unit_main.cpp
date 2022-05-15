@@ -7,6 +7,7 @@
 #include "D_modul.h"
 #include "Unit_add.h"
 #include "SupliPCH1.h"
+#include "Unit_add_supli.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -52,13 +53,22 @@ void __fastcall TF_main::B_editClick(TObject *Sender)
 
 void __fastcall TF_main::B_deleteClick(TObject *Sender)
 {
-    String company = DataModule2->ADOQuery2->FieldByName("company_name")->AsString;
+   	String company = DataModule2->ADOQuery2->FieldByName("company_name")->AsString;
 	auto buttonSelected = MessageDlgPos("Вы точно хотите удалить '"+company+"'",mtConfirmation, mbOKCancel, 0, 20, 100);
 	if(buttonSelected ==	mrOk)
 	{
-		DataModule2->ADOSQl->SQL->Text = "Delete From suppliers where ID_probi = :id";
+		DataModule2->ADOSQl->SQL->Text = "Delete From suppliers where id_supplies = :id";
 		DataModule2->ADOSQl->Parameters->ParamByName("id")->Value= F_main->id;
+        DataModule2->ADOSQl->ExecSQL();
+		DataModule2->ADOSQl->Close();
+		DataModule2->ADOQuery2->Refresh();
 	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TF_main::Button2Click(TObject *Sender)
+{
+    F_add_supli->Show();
 }
 //---------------------------------------------------------------------------
 

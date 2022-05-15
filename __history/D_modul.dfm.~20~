@@ -19,7 +19,6 @@ object DataModule2: TDataModule2
     Top = 144
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = DB_Connection
     CursorType = ctStatic
     Parameters = <>
@@ -29,7 +28,6 @@ object DataModule2: TDataModule2
     Top = 136
   end
   object ADOSQl: TADOQuery
-    Active = True
     Connection = DB_Connection
     CursorType = ctStatic
     Parameters = <>
@@ -39,7 +37,6 @@ object DataModule2: TDataModule2
     Top = 264
   end
   object ADOQuery2: TADOQuery
-    Active = True
     Connection = DB_Connection
     CursorType = ctStatic
     Parameters = <>
@@ -52,5 +49,11 @@ object DataModule2: TDataModule2
     DataSet = ADOQuery2
     Left = 448
     Top = 144
+  end
+  object ADOTable: TADOQuery
+    Connection = DB_Connection
+    Parameters = <>
+    Left = 192
+    Top = 264
   end
 end

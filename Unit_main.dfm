@@ -188,6 +188,7 @@ object F_main: TF_main
       Height = 57
       Caption = 'Button2'
       TabOrder = 0
+      OnClick = Button2Click
     end
   end
 end

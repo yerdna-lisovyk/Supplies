@@ -26,6 +26,7 @@ __published:	// IDE-managed Components
 	void __fastcall B_addClick(TObject *Sender);
 	void __fastcall B_editClick(TObject *Sender);
 	void __fastcall B_deleteClick(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     int id;

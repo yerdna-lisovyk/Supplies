@@ -1,23 +1,23 @@
 //---------------------------------------------------------------------------
 
-#ifndef D_modulH
-#define D_modulH
+#ifndef Unit_add_supliH
+#define Unit_add_supliH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
-#include <Data.DB.hpp>
-#include <Data.Win.ADODB.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
-class TDataModule2 : public TDataModule
+class TF_add_supli : public TForm
 {
 __published:	// IDE-managed Components
-	TADOConnection *DB_Connection;
-	TDataSource *DataSource1;
-	TADOQuery *ADOQuery1;
+	TPanel *Panel1;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TDataModule2(TComponent* Owner);
+	__fastcall TF_add_supli(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TDataModule2 *DataModule2;
+extern PACKAGE TF_add_supli *F_add_supli;
 //---------------------------------------------------------------------------
 #endif

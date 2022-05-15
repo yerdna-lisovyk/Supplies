@@ -52,4 +52,10 @@ object DataModule2: TDataModule2
     Left = 448
     Top = 144
   end
+  object ADOTable: TADOQuery
+    Connection = DB_Connection
+    Parameters = <>
+    Left = 192
+    Top = 264
+  end
 end
